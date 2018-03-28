@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var inputTF: UITextField!
+    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var helloBtn: UIButton!
+    @IBAction func btnHello(_ sender: Any) {
+        resultLbl.text="Hello "+inputTF.text!
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
